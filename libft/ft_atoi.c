@@ -6,7 +6,7 @@
 /*   By: yaoberso <yaoberso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 10:41:00 by yaoberso          #+#    #+#             */
-/*   Updated: 2024/10/01 11:34:35 by yaoberso         ###   ########.fr       */
+/*   Updated: 2024/10/02 15:01:52 by yaoberso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@ int	ft_atoi(char *str)
 	int		i;
 	int		r;
 	int		s;
-	int		compt;
 
-	compt = 0;
 	i = 0;
 	r = 0;
 	s = 1;
@@ -26,10 +24,7 @@ int	ft_atoi(char *str)
 	while (str[i] == '+' || str[i] == '-')
 		if (str[i] == '-')
 			s *= -1;
-	if (compt == 1)
-		return (0);
 		i++;
-		compt++;
 	while (str[i] <= '9' && str[i] >= '0')
 		r = r * 10 + (str[i] - '0');
 		i++;

@@ -1,34 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isprint.c                                       :+:      :+:    :+:   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yaoberso <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*   By: yaoberso <yaoberso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/01 13:22:49 by yaoberso          #+#    #+#             */
-/*   Updated: 2024/10/01 13:24:14 by yaoberso         ###   ########.fr       */
+/*   Created: 2024/10/02 14:35:39 by yaoberso          #+#    #+#             */
+/*   Updated: 2024/10/02 14:35:39 by yaoberso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int	ft_isprint(char *str)
+
+void *ft_memset(void *s, int c, size_t n)
 {
-	int		i;
+	size_t i;
 
 	i = 0;
-	while (str[i] != '\0')
+	unsigned char *s2 = (unsigned char *)s;
+	while (i < n)
 	{
-		if (!((str[i] >= 32 && str[i] <= 126)))
-		{
-			return (0);
-		}
+		s2[i] = (unsigned char)c;
 		i++;
 	}
-	return (1);
+	return (s);
 }
-/*
-#include <stdio.h>
-int main(void)
-{
-	char *str = "uygfwugf";
-	printf("%i", ft_isalnum(str));
-	return (0);
-}*/

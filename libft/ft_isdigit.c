@@ -1,26 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_isdigit.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yaoberso <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*   By: yaoberso <yaoberso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/01 13:24:58 by yaoberso          #+#    #+#             */
-/*   Updated: 2024/10/01 13:37:26 by yaoberso         ###   ########.fr       */
+/*   Created: 2024/10/01 12:28:03 by yaoberso          #+#    #+#             */
+/*   Updated: 2024/10/02 11:02:24 by yaoberso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int ft_memchr(char *str, const char l)
+int	ft_isdigit(int i)
 {
-	int i;
-
-	i = 0;
-	while(str[i] != '\0')
+	if (i <= '9' && i >= '0')
 	{
-		if(str[i] == l)
-		{
-			return (i + 1);
-		}
-		i++;
+		return (1);
 	}
 	return (0);
 }
@@ -28,8 +21,7 @@ int ft_memchr(char *str, const char l)
 #include <stdio.h>
 int main(void)
 {
-	char *str = "bcdaefg";
-	const char l = 'a';
-	printf("%i", ft_memchr(str,l));
+	char *str = "uygfwugf 82328";
+	printf("%i", ft_isalnum(str));
 	return (0);
 }*/

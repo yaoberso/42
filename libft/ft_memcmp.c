@@ -1,35 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yaoberso <marvin@42lausanne.ch>            +#+  +:+       +#+        */
+/*   By: yaoberso <yaoberso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/10/01 12:21:46 by yaoberso          #+#    #+#             */
-/*   Updated: 2024/10/01 12:27:47 by yaoberso         ###   ########.fr       */
+/*   Created: 2024/10/02 13:26:12 by yaoberso          #+#    #+#             */
+/*   Updated: 2024/10/02 13:26:12 by yaoberso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-int	ft_isalpha(char *str)
+
+int ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	int		i;
+	size_t i;
 
 	i = 0;
-	while (str[i] != '\0')
+	unsigned char *ptr1 = (unsigned char*)s1;
+    unsigned char *ptr2 = (unsigned char*)s2;
+	while(i < n)
 	{
-		if (!((str[i] >= 'a' && str[i] <= 'z')
-				|| (str[i] >= 'A' && str[i] <= 'Z')))
+		if (ptr1[i] != ptr2[i])
 		{
-			return (0);
+			return (ptr1[i] - ptr2[i]);
 		}
 		i++;
 	}
-	return (1);
-}
-/*
-#include <stdio.h>
-int main(void)
-{
-	char *str = "uygfwugf";
-	printf("%i", ft_isalnum(str));
 	return (0);
-}*/
+}
