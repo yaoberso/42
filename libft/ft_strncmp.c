@@ -6,13 +6,13 @@
 /*   By: yaoberso <yaoberso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 12:41:19 by yaoberso          #+#    #+#             */
-/*   Updated: 2024/10/03 12:41:19 by yaoberso         ###   ########.fr       */
+/*   Updated: 2024/10/04 10:42:08 by yaoberso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_strncmp(const char *s1, const char *s2, size_t n)
+int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	size_t i;
+	size_t		i;
 
 	i = 0;
 	while (s1[i] != '\0' && s2[i] != '\0' && n > i)

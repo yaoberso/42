@@ -6,26 +6,26 @@
 /*   By: yaoberso <yaoberso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 10:19:53 by yaoberso          #+#    #+#             */
-/*   Updated: 2024/10/03 10:32:23 by yaoberso         ###   ########.fr       */
+/*   Updated: 2024/10/04 10:39:36 by yaoberso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *strchr(const char *s, int c)
+char	*strchr(const char *s, int c)
 {
-	int i;
+	int		i;
 
 	i = 0;
-	while(s[i] != '\0')
+	while (s[i] != '\0')
 	{
 		if (s[i] == c)
 		{
-			return((char *)(s + i));
+			return ((char *)(s + i));
 		}
 		i++;
 	}
 	if (c == '\0')
 	{
 		return ((char *)(s + 1));
-	} 
-	return NULL;
+	}
+	return (NULL);
 }

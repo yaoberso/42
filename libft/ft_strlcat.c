@@ -6,11 +6,11 @@
 /*   By: yaoberso <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 14:29:10 by yaoberso          #+#    #+#             */
-/*   Updated: 2024/10/01 14:29:12 by yaoberso         ###   ########.fr       */
+/*   Updated: 2024/10/04 10:40:07 by yaoberso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t ft_strlcat(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
 	size_t	i;
 	size_t	j;

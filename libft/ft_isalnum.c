@@ -6,12 +6,12 @@
 /*   By: yaoberso <marvin@42lausanne.ch>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 12:11:26 by yaoberso          #+#    #+#             */
-/*   Updated: 2024/10/01 12:21:32 by yaoberso         ###   ########.fr       */
+/*   Updated: 2024/10/04 10:19:28 by yaoberso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 int	ft_isalnum(int i)
 {
-	if(ft_isalpha(i) || ft_isdigit(i))
+	if ((ft_isalpha(i) || ft_isdigit(i)))
 	{
 		return (1);
 	}

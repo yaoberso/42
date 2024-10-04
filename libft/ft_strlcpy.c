@@ -6,13 +6,13 @@
 /*   By: yaoberso <yaoberso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/03 11:16:50 by yaoberso          #+#    #+#             */
-/*   Updated: 2024/10/03 11:16:50 by yaoberso         ###   ########.fr       */
+/*   Updated: 2024/10/04 10:41:06 by yaoberso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 {
-	size_t i;
+	size_t		i;
 
 	i = 0;
 	if (dstsize == 0)
@@ -25,5 +25,5 @@ size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)
 		i++;
 	}
 	dst[i] = 0;
-	return ft_strlen(src);
+	return (ft_strlen(src));
 }
