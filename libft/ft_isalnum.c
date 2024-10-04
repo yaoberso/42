@@ -9,6 +9,9 @@
 /*   Updated: 2024/10/04 10:19:28 by yaoberso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
+
 int	ft_isalnum(int i)
 {
 	if ((ft_isalpha(i) || ft_isdigit(i)))
