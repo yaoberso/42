@@ -6,13 +6,13 @@
 /*   By: yaoberso <yaoberso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/02 14:51:59 by yaoberso          #+#    #+#             */
-/*   Updated: 2024/10/04 10:45:32 by yaoberso         ###   ########.fr       */
+/*   Updated: 2024/10/07 11:14:11 by yaoberso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_tolower(int i)
+int	ft_toupper(int i)
 {
 	if (i >= 'a' && i <= 'z')
 	{

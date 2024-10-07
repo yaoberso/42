@@ -6,13 +6,13 @@
 /*   By: yaoberso <yaoberso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/01 15:12:26 by yaoberso          #+#    #+#             */
-/*   Updated: 2024/10/02 10:12:13 by yaoberso         ###   ########.fr       */
+/*   Updated: 2024/10/07 13:52:39 by yaoberso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_strlen(char *str)
+int	ft_strlen(const char *str)
 {
 	int		i;
 
