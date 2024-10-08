@@ -6,7 +6,7 @@
 /*   By: yaoberso <yaoberso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 10:33:08 by yaoberso          #+#    #+#             */
-/*   Updated: 2024/10/07 13:52:08 by yaoberso         ###   ########.fr       */
+/*   Updated: 2024/10/08 12:57:48 by yaoberso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ void	ft_putnbr_fd(int nb, int fd)
 	if (nb > 9)
 	{
 		ft_putnbr_fd(nb / 10, fd);
-		ft_putnbr_fd(nb % 10, fd);
 	}
 	ft_putchar_fd(nb % 10 + '0', fd);
 }

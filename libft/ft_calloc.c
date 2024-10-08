@@ -18,7 +18,7 @@ void	*ft_calloc(size_t nitems, size_t size)
 	void		*ptr;
 
 	total_size = nitems * size;
-	if (nitems == 0 || size == 0 || total_size / nitems != size)
+	if (nitems != 0 && (total_size / nitems != size))
 	{
 		return (NULL);
 	}

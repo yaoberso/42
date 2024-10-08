@@ -6,7 +6,7 @@
 /*   By: yaoberso <yaoberso@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 10:03:23 by yaoberso          #+#    #+#             */
-/*   Updated: 2024/10/07 13:28:53 by yaoberso         ###   ########.fr       */
+/*   Updated: 2024/10/08 12:52:51 by yaoberso         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,62 +33,44 @@ char	*ft_strcat(char *dest, char *src)
 	return (dest);
 }
 
-int	calcul_len(int size, char **strs, char *sep)
+void	ft_strcpy_cust(char *dest, const char *src, int *i)
 {
-	int		i;
-	int		len;
+	int		j;
 
-	len = 0;
-	i = 0;
-	while (i < size)
+	j = 0;
+	while (src[j] != '\0')
 	{
-		len += (ft_strlen(strs[i]));
-		i++;
+		dest[*i] = src[j];
+		(*i)++;
+		j++;
 	}
-	len += (size - 1) * ft_strlen(sep);
-	return (len);
 }
 
-char	*concat(int size, char **strs, char *sep, int total_len)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char	*result;
+	int		len1;
+	int		len2;
 	int		i;
 
-	i = 0;
-	result = (char *)malloc(total_len + 1);
-	if (result == NULL)
-	{
-		return (NULL);
-	}
-	result[0] = '\0';
-	while (i < size)
-	{
-		ft_strcat(result, strs[i]);
-		if (i < size - 1)
-		{
-			ft_strcat(result, sep);
-		}
-		i++;
-	}
-	return (result);
-}
-
-char	*ft_strjoin(int size, char **strs, char *sep)
-{
-	char	*result;
-	int		total_len;
-
-	if (size <= 0)
+	if (s1 == NULL && s2 == NULL)
 	{
 		result = (char *)malloc(1);
 		if (result == NULL)
-		{
 			return (NULL);
-		}
 		result[0] = '\0';
 		return (result);
 	}
-	total_len = calcul_len(size, strs, sep);
-	result = concat(size, strs, sep, total_len);
+	len1 = ft_strlen(s1);
+	len2 = ft_strlen(s2);
+	result = (char *)malloc(len1 + len2 + 1);
+	if (result == NULL)
+		return (NULL);
+	i = 0;
+	if (s1 != NULL)
+		ft_strcpy_cust(result, s1, &i);
+	if (s2 != NULL)
+		ft_strcpy_cust(result, s2, &i);
+	result[i] = '\0';
 	return (result);
 }
