@@ -25,3 +25,18 @@ void	ft_bzero(void *s, size_t len)
 		i++;
 	}
 }
+/*
+#include <stdio.h>
+#include "libft.h"
+
+int main(void)
+{
+    char str[6] = "Hello";
+
+    ft_bzero(str, 3);
+
+    printf("Chaîne après ft_bzero : %s\n", str);
+
+    return (0);
+}
+*/

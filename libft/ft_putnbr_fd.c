@@ -30,3 +30,15 @@ void	ft_putnbr_fd(int nb, int fd)
 	}
 	ft_putchar_fd(nb % 10 + '0', fd);
 }
+/*
+int main(void)
+{
+    ft_putnbr_fd(12345, 1);
+    write(1, "\n", 1);
+    ft_putnbr_fd(-12345, 1);
+    write(1, "\n", 1);
+    ft_putnbr_fd(-2147483648, 1);
+    write(1, "\n", 1);
+    return (0);
+}
+*/
