@@ -27,7 +27,6 @@ void	ft_bzero(void *s, size_t len)
 }
 /*
 #include <stdio.h>
-#include "libft.h"
 
 int main(void)
 {

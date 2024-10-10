@@ -26,3 +26,16 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    char str[20] = "Hello, World!";
+
+    ft_memset(str, 'A', 5);
+    printf("ft_memset result: %s\n", str);
+
+    return (0);
+}
+*/

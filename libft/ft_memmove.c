@@ -40,3 +40,20 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    char src[] = "Overlap";
+    char dest[20];
+
+    ft_memmove(dest, src, 8);
+    printf("ft_memmove result: %s\n", dest);
+
+    ft_memmove(src + 3, src, 5);
+    printf("ft_memmove overlapping result: %s\n", src);
+
+    return (0);
+}
+*/

@@ -27,3 +27,19 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    char str[] = "Hello World";
+    char *result = (char *)ft_memchr(str, 'W', 11);
+
+    if (result)
+        printf("Caractère trouvé : %s\n", result);
+    else
+        printf("Caractère non trouvé\n");
+
+    return (0);
+}
+*/

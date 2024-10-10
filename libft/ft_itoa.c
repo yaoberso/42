@@ -59,6 +59,7 @@ char	*ft_itoa(int n)
 	return (str);
 }
 /*
+#include <stdio.h>
 int main()
 {
     char    *str;

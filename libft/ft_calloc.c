@@ -30,3 +30,19 @@ void	*ft_calloc(size_t nitems, size_t size)
 	ft_memset(ptr, 0, total_size);
 	return (ptr);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    int *arr = (int *)ft_calloc(5, sizeof(int));
+
+    if (!arr)
+        return (1);
+
+    printf("Premier élément du tableau après ft_calloc : %d\n", arr[0]);
+
+    free(arr);
+    return (0);
+}
+*/
