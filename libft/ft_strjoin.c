@@ -74,3 +74,19 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	result[i] = '\0';
 	return (result);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    char *result;
+
+    char str1[] = "Hello, ";
+    char str2[] = "World!";  
+    result = ft_strjoin(str1, str2);
+    printf("%s\n", result);
+    
+    free(result);
+    return (0);
+}
+*/

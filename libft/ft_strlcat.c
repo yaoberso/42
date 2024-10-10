@@ -35,3 +35,17 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[i + j] = '\0';
 	return (i + ft_strlen(src));
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    char dest[20] = "Hello, ";
+    char src[] = "World!";
+
+    ft_strlcat(dest, src, 20);
+    printf("Chaîne résultante : %s\n", dest);
+
+    return (0);
+}
+*/

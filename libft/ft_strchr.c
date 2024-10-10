@@ -31,3 +31,19 @@ char	*ft_strchr(const char *s, int c)
 	}
 	return (NULL);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    char *result;
+
+    result = ft_strchr("Hello, World!", 'W');
+    printf("%s\n", result);
+
+    result = ft_strchr("Hello, World!", 'z');
+    printf("%s\n", result ? result : "Not found");
+
+    return (0);
+}
+*/

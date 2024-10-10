@@ -1,3 +1,5 @@
+
+
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
@@ -53,3 +55,19 @@ char	*ft_strtrim(char const *s1, char const *set)
 	mem[end - start] = '\0';
 	return (mem);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    char *s1 = "   Bonjour, le monde!   ";
+    char *set = " ";
+    char *result;
+
+    result = ft_strtrim(s1, set);
+    printf("Chaîne après trim : '%s'\n", result);
+
+    free(result);
+    return (0);
+}
+*/

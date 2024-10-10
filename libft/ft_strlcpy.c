@@ -29,3 +29,14 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	dst[i] = 0;
 	return (ft_strlen(src));
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    const char *src = "Bonjour, le monde!";
+    printf(%s\n", ft_strlcpy(dest, src, 20));
+
+    return (0);
+}
+*/

@@ -27,3 +27,19 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    char str[] = "Hello, World!";
+    unsigned int i = 0;
+
+    while (str[i] != '\0')
+    {
+        printf("Index %u: %c\n", i, str[i]);
+        i++;
+    }   
+    return (0);
+}
+*/

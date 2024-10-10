@@ -20,3 +20,15 @@ int	ft_toupper(int i)
 	}
 	return (i);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    char c = 'A';
+    
+    printf("'%c'\n", c, ft_toupper(c));
+    
+    return (0);
+}
+*/

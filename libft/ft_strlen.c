@@ -23,3 +23,13 @@ int	ft_strlen(const char *str)
 	}
 	return (i);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	char *str = "Hello Word";
+	printf("%d", ft_strlen(str));
+	return (0);
+}
+*/

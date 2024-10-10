@@ -20,3 +20,15 @@ int	ft_tolower(int i)
 	}
 	return (i);
 }
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    char c = 'A';
+    
+    printf("'%c'\n", c, ft_tolower(c));
+    
+    return (0);
+}
+*/
